@@ -38,6 +38,7 @@ html{
 .data-div{
   display: flex;
   flex-direction: row;
+  margin: 10px
 }
 .data-container{
   display: flex;
