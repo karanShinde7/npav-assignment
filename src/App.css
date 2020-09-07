@@ -1,38 +1,121 @@
+html{
+  background-color: #20232A !important;
+}
+
 .App {
   text-align: center;
+  margin: 40px 0px;
+  background-color: #20232A !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-container {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  min-height: 300px;
+  border : 2px solid #61DAFB;
+  margin: 30px;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav{
+  justify-content: center !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.h1-label{
+  color : red;
+  margin: 10px;
+}
+
+.search-bar-main{
+  width: 250px !important;
+}
+
+.content-bar-main{
+  width: 100%;
+}
+.data-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+}
+.data-container{
+  display: flex;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+input[type=radio] {
+  margin:0px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input[type=search] {
+  width: 190px;
+  box-sizing: border-box;
+  border: 2px solid #AE498C;
+  font-size: 1rem;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 4px !important;
+  outline-offset : 0px !important;
+}
+
+.row-click{
+  cursor: pointer;
+}
+
+.label-style{
+  font-size : 23px;
+  color: #61DAFB;
+}
+
+.country-div{
+  float: left;
+  width: 250px;
+}
+
+.progress{
+  width: 90% !important;
+}
+
+.horiz-bar{
+    float: left;
+    display: inline-block;
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
+}
+
+@media (min-width: 600px) ,(max-width: 900px) {
+  .country-div{
+    float: left;
+    width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+  input[type=search] {
+    width: 150px;
+  }
+}
+
+@media  (max-width: 600px) {
+  .country-div{
+    justify-content: center;
+    width: 300px;
+  }
+  .data-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+.search-bar-main{
+  width: auto !important;
+}
+  input[type=search] {
+    width: 100%;
+  }
+
+  .data-div{
+    flex-direction: column;
+  }
+  
+  .horiz-bar{
+    float: none;
   }
 }
