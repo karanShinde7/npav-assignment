@@ -1,25 +1,24 @@
-Cric Score 
-
-This is application is about getting the the total average score of batsman against particular
+This is an application where you can get the total average score of a batsman against particular
 country.
-1. This application is works in 2 modes test and server mode.
-2. For test mode application will give you an data which is static(mentioned in code itself).
-3. For server mode application will give you an data from the server(which can be dynamic data)
-4. User can enter country name in text box.
-5. If the country is present it will show you the average score against country.
-6. If the country name matches exactly to the country name mentioned in data, then application will show progress bar of an average other wise it will not.
-7. Basically to run this application you need to have setup of react, node.
-8. After getting the code open terminal inside application and use 'npm i' command that will help you to install all packages/plugins which are required in this application.
+1. This application works in 2 modes :- Test mode and Server mode.
+2. For Test Mode, the application will give you static data (hardcoded).
+3. For Server Mode, the application will give you data from the server (dynamic data)
+4. Users can enter the country name in the 2 text boxes.
+5. If the country exists in the data, it will show you the average score against the country.
+6. If the country name matches exactly to the country name mentioned in the data, then the application will show the progress bar of the average score of batsman against the entered country, otherwise, it will not.
+7. Basically, to run this application you need to have a setup of React and Node.
+8. After getting the code, open the terminal inside the application and use the 'npm i' command that will help you to install all packages/plugins which are required in this application.
 
 
+--------
 About Coding : 
 1. Application coding starts from App.js.
-2. HomeScreen : It is like a container where i put all the component which are required. And Radio button choice to see Test data and server data.
+2. HomeScreen : It is like a container, where I put all the components which are required. A  Radio button is provided to choose between Test mode and Server mode.
 3. Inside components : 
-    a. labelComponent : Whichever labels or text we are using in the application can be accessible using this component.
-    b. searchComponent : We are using search textbox to search the country.
-    c. serverDataComponent : We are showing the data which comtaines Country name, average score and progress bar.
-    d. scoreViewComponent : It is class component which is basically used to glued all the components together. 
-4. data : Static data for test mode is mentioned in a one js file.
-5. services : Here I called API to getting the data from the server which then can be used as a dynamic content in an application.
-6. app.css : All the styling which is related to the application mentioned here
+    a. labelComponent : All labels or text, we are using in this application can be accessed using this particular component.
+    b. searchComponent : We are using a search textbox to search the country.
+    c. serverDataComponent : We are showing the data which contains the Country name, average score, and progress bar.
+    d. scoreViewComponent : It is a class component that is basically used to glue all the components together. 
+4. data : Static data for test mode is mentioned in a single js file called ‘data.js’.
+5. services : Here I have called API to get the data, from the server which then can be used as dynamic content in the application.
+6. app.css : All the styling which is related to the application are mentioned here.
